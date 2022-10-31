@@ -36,8 +36,8 @@ begin
 	STIMULUS : process
 
 	begin
-		A_TB <= "00001001"; Sel_TB <= "010"; wait for 100 ps;
-		A_TB <= "10000000"; Sel_TB <= "111"; wait for 100 ps;
+		A_TB <= "00001001"; Sel_TB <= "000"; wait for 100 ps;
+		A_TB <= "00001001"; Sel_TB <= "111"; wait for 100 ps;
 	end process; 
 
 end architecture;
