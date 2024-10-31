@@ -16,7 +16,7 @@ begin
 	F(8) <= A(3) and not A(2) and not A(1) and not A(0);
 	F(9) <= A(3) and not A(2) and not A(1) and A(0);
 	F(10) <= A(3) and not A(2) and A(1) and not A(0);
-	F(11) <= A(3) and not A(2) and A(1) and not A(0);
+	F(11) <= A(3) and not A(2) and A(1) and A(0);
 	F(12) <= A(3) and A(2) and not A(1) and not A(0);
 	F(13) <= A(3) and A(2) and not A(1) and A(0);
 	F(14) <= A(3) and A(2) and A(1) and not A(0);
