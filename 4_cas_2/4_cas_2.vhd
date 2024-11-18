@@ -10,7 +10,7 @@ begin
 	SystemI_Proc : process (ABCD)
 		begin
  			case (ABCD) is
-				when "0000" | "0011" | "1001" | "1011"  => F <='1';
+				when "0001" | "0011" | "1001" | "1011"  => F <='1';
 				when others 				    => F <='0';
 end case;
 		end process;
