@@ -35,29 +35,29 @@ end tb_mux8to1;
 
 architecture tb_mux8to1_arch of tb_mux8to1 is
 
-    signal A   : bit_vector(7 downto 0);
-    signal Sel : bit_vector(2 downto 0);
-    signal F   : bit;
+    signal A_TB   : bit_vector(7 downto 0);
+    signal Sel_TB : bit_vector(2 downto 0);
+    signal F_TB   : bit;
 
 begin
 
     -- Instantiate the Unit Under Test (UUT)
     UUT: entity work.mux8to1
         port map (
-            A   => A,
-            Sel => Sel,
-            F   => F
+            A   => A_TB,
+            Sel => Sel_TB,
+            F   => F_TB
         );
 
     -- Test process
     process
     begin
         -- Test vector 1
-        A   <= "10101010";
-        Sel <= "000";  -- F = A0
+        A_TB   <= "10101010";
+        Sel_TB <= "000";  -- F = A0
         wait for 10 ns;
 
-        Sel <= "001";  -- F = A1
+        Sel_TB <= "001";  -- F = A1
         wait for 10 ns;
 
         -- End simulation
@@ -65,5 +65,4 @@ begin
     end process;
 
 end architecture;
-
 
